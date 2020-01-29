@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PlanetStoreService } from '../planet-store.service';
 
 @Component({
   selector: 'app-planet-detail',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlanetDetailComponent implements OnInit {
 
-  constructor() { }
+  constructor(private store: PlanetStoreService) { }
 
   ngOnInit() {
+  }
+
+  deletePlanet(){
+    
   }
 
 }
