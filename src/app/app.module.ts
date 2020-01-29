@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { PlanetsListComponent } from './planets-list/planets-list.component';
 import { PlanetsCreateComponent } from './planets-create/planets-create.component';
 import { PlanetsDetailComponent } from './planets-detail/planets-detail.component';
+import { PlanetDetailComponent } from './planet-detail/planet-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlanetsListComponent,
     PlanetsCreateComponent,
-    PlanetsDetailComponent
+    PlanetsDetailComponent,
+    PlanetDetailComponent
   ],
   imports: [
     BrowserModule
