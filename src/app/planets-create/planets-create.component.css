@@ -1,7 +1,10 @@
 label{
-    text-align: center;
+    display: inline-block;
+    width: 140px;
+    text-align: left;
 }
 
 input{
-    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
