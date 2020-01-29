@@ -17,4 +17,8 @@ export class PlanetStoreService {
   sortPlanets(){
     this.planets.sort((a, b) => (a.distanceFromSun > b.distanceFromSun) ? 1 : -1)
   }
+
+  log(){
+    console.log(this.planets);
+  }
 }

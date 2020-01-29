@@ -1,5 +1,12 @@
 <h1>Create New Planet</h1>
 
-<input [(ngModel)] = "name">
-<input [(ngModel)] = "moons">
-<input [(ngModel)] = "distanceFromSun">
+<label>Planet name:</label>
+<div><input [(ngModel)] = "name"></div>
+
+<label>Number of Moons:</label>
+<div><input [(ngModel)] = "moons"></div>
+
+<label>Distance From Sun:</label>
+<div><input [(ngModel)] = "distanceFromSun"></div>
+<br>
+<div><button (click)="createPlanet()" >Create Planet</button></div>

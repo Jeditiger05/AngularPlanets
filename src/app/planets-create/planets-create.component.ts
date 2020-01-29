@@ -20,7 +20,9 @@ export class PlanetsCreateComponent implements OnInit {
 
   createPlanet(){
     let planet1 = new Planet(this.name, this.moons, this.distanceFromSun);
-    
+    this.store.addPlanet(planet1);
+    this.store.log();
+
   }
 
 }
