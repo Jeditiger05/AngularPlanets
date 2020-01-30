@@ -1,0 +1,20 @@
+.container{
+    display: block;
+    text-align: center;
+}
+
+.myList{
+
+    width: 15em;
+}
+
+li{
+    display: table;
+    margin:10px auto 10px auto;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(141, 240, 168);
+    padding: 5px;
+    border-radius: 10px;
+}
+

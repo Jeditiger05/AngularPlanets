@@ -9,10 +9,10 @@ import { Planet } from '../planet';
 })
 export class PlanetsCreateComponent implements OnInit {
 
-  planet1: Planet;
-/*   name: string;
+  //planet: Planet;
+  name: string;
   moons: number;
-  distanceFromSun: number; */
+  distanceFromSun: number;
 
   constructor(private store: PlanetStoreService) { }
 
@@ -20,10 +20,10 @@ export class PlanetsCreateComponent implements OnInit {
   }
 
   createPlanet() {
-   // let planet1 = new Planet(this.name, this.moons, this.distanceFromSun);//Create Planet Object Using constructor
-   // let planet2: Planet = { name: this.name, moons: this.moons, distanceFromSun: this.distanceFromSun }//Create Planet Object without Using Constructor
+   //let planet1 = new Planet(this.name, this.moons, this.distanceFromSun);//Create Planet Object Using constructor
+   let planet: Planet = { name: this.name, moons: this.moons, distanceFromSun: this.distanceFromSun }//Create Planet Object without Using Constructor
 
-    this.store.addPlanet(this.planet1);
+    this.store.addPlanet(planet);
     //this.store.addPlanet(planet2);
     this.store.log();
 

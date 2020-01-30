@@ -21,4 +21,8 @@ export class PlanetStoreService {
   log(){
     console.log(this.planets);
   }
+
+  planetsList(){
+    return this.planets;
+  }
 }
