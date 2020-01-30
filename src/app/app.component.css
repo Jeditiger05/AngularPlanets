@@ -1,0 +1,12 @@
+
+body{
+    border-style: solid;
+    display: block;
+    margin: auto auto auto auto;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    text-align: center;
+    background-image: url(src/assets/images/solar.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
