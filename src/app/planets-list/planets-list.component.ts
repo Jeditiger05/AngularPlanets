@@ -17,8 +17,16 @@ export class PlanetsListComponent implements OnInit {
   ngOnInit() {
   }
 
-  displayPlanets(){
+  displayPlanets() {
+
     this.dispPlanets = this.store.planetsList();
     console.log("Display");
+    if (this.dispPlanets.length > 0) {
+      this.store.showList = true;
+      this.store.showError = false;
+      this.store.showCreate = false;
+    }
+    else
+      this.store.showError = true;
   }
 }

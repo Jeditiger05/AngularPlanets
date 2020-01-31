@@ -1,6 +1,6 @@
 
 body{
-    border-style: solid;
+    border: 10px darkgoldenrod solid;
     display: block;
     margin: auto auto auto auto;
     padding-bottom: 30px;

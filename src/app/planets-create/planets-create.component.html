@@ -1,5 +1,5 @@
 
-<div id="container">
+<div id="container" *ngIf="this.store.showCreate">
 <h1>Create New Planet</h1>
 
 <div>
@@ -18,5 +18,10 @@
 </div>
 
 <br>
-<button (click)="createPlanet()" >Create Planet</button>
+
+</div>
+
+<div class="container">
+    <button (click)="createPlanet()" >Create Planet</button>
+    
 </div>

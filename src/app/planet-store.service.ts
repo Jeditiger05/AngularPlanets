@@ -7,7 +7,9 @@ import { Planet } from './planet';
 export class PlanetStoreService {
 
   constructor() { }
-
+  showList: boolean = false;
+  showCreate: boolean = true;
+  showError: boolean = false;
   planets: Planet[] = []
 
   addPlanet(planet: Planet){
