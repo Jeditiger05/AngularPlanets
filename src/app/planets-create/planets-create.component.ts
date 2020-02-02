@@ -21,13 +21,13 @@ export class PlanetsCreateComponent implements OnInit {
     //let planet1 = new Planet(this.name, this.moons, this.distanceFromSun);//Create Planet Object Using constructor
     //let planet: Planet = { name: this.name, moons: this.moons, distanceFromSun: this.distanceFromSun }//Create Planet Object without Using Constructor
     if (this.name.length > 0) {
+      //this.store.addPlanet(planet2);
       this.store.addPlanet({ name: this.name, moons: this.moons, distanceFromSun: this.distanceFromSun });
       this.store.log();
       this.name = "";
       this.store.showCreate = true;
       this.store.showList = false;
       this.store.showError = false;
-      //this.store.addPlanet(planet2);
     }
     else {
       this.store.log();
