@@ -1,1 +1,19 @@
-<p>planet-detail works!</p>
+<div class="selectStyle" *ngIf="this.store.selectedPlanet">
+
+    <h2>Planet Details</h2>
+    <div class="block">
+        <div>
+            <label>Name:</label>
+            <input class="inputStyle" [(ngModel)]="this.store.selectedPlanet.name" placeholder="planet name" />
+        </div>
+        <div>
+            <label>Moons:</label>
+            <input class="inputStyle" [(ngModel)]="this.store.selectedPlanet.moons" placeholder="amount of moons" />
+        </div>
+        <div>
+            <label>Distance From Sun:</label>
+            <input class="inputStyle" [(ngModel)]="this.store.selectedPlanet.distanceFromSun" placeholder="distance from sun" />
+        </div>
+    </div>
+
+</div>

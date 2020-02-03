@@ -1,4 +1,4 @@
-.container{
+.container, .block{
     display: block;
     text-align: center;
 }
@@ -8,7 +8,7 @@
     width: 15em;
 }
 
-li{
+.container li{
     font-size: 20px;
     font-family: arial black;
     display: table;
@@ -18,6 +18,22 @@ li{
     background-color: rgb(141, 240, 168);
     padding: 5px;
     border-radius: 10px;
+}
+
+.container li:hover {
+    color: rgb(61, 0, 202);
+    background-color: rgb(73, 208, 218);
+    left: .1em; 
+}
+
+.container li.selected {
+    background-color: rgb(41, 155, 92);
+    color: white;
+}
+
+.container li.selected:hover {
+    background-color: rgb(41, 155, 92);
+    color: white;
 }
 
 h1, h2{
@@ -37,4 +53,6 @@ button{
     font-size: 20px;
     padding: 5px;
 }
+
+
 

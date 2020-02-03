@@ -11,6 +11,7 @@ import { Planet } from '../planet';
 export class PlanetsListComponent implements OnInit {
 
   public dispPlanets: Planet[];
+  
 
   constructor(private store: PlanetStoreService) { }
 
@@ -28,5 +29,10 @@ export class PlanetsListComponent implements OnInit {
     }
     else
       this.store.showError = true;
+  }
+
+  onSelect(planet: Planet){
+    this.store.selectedPlanet = planet;
+    console.log(this.store.selectedPlanet)
   }
 }

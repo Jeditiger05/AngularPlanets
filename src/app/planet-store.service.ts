@@ -6,25 +6,28 @@ import { Planet } from './planet';
 })
 export class PlanetStoreService {
 
-  constructor() { }
   showList: boolean = false;
   showCreate: boolean = true;
   showError: boolean = false;
   planets: Planet[] = []
+  selectedPlanet: Planet;
 
-  addPlanet(planet: Planet){
+  constructor() {}
+
+
+  addPlanet(planet: Planet) {
     this.planets.push(planet);
   }
 
-  sortPlanets(){
+  sortPlanets() {
     this.planets.sort((a, b) => (a.distanceFromSun > b.distanceFromSun) ? 1 : -1)
   }
 
-  log(){
+  log() {
     console.log(this.planets);
   }
 
-  planetsList(){
+  planetsList() {
     return this.planets;
   }
 }

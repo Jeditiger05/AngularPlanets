@@ -1,0 +1,29 @@
+label{
+    font-family: 'Bauhaus 93';
+    text-shadow: 2px 2px rgb(17, 0, 124), -2px -2px rgb(17, 0, 124), 
+                 2px -2px  rgb(17, 0, 124), -2px 2px  rgb(17, 0, 124);
+                 font-size: 20px;
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+    color: cornsilk;
+}
+
+input{
+    background-color: cornsilk;
+    width: 200px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+h1, h2{
+    color: cornsilk;
+    font-family: 'Bauhaus 93';
+    font-size: 45px;
+    text-shadow: 3px 3px 0 rgb(194, 61, 0);
+
+}
