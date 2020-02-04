@@ -13,12 +13,12 @@ export class PlanetDetailComponent implements OnInit {
   ngOnInit() {
   }
 
-  removePlanet(){
-    for( var i = 0; i < this.store.planets.length; i++){ 
-      if ( this.store.planets[i].name ==(this.store.selectedPlanet.name)) {
-        this.store.planets.splice(i, 1); 
+  removePlanet() {
+    for (var i = 0; i < this.store.planets.length; i++) {
+      if (this.store.planets[i].name == (this.store.selectedPlanet.name)) {
+        this.store.planets.splice(i, 1);
       }
-   }
+    }
   }
 
 }
