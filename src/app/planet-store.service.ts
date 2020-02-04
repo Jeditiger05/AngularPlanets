@@ -10,10 +10,15 @@ export class PlanetStoreService {
   showList: boolean = false;
   showCreate: boolean = true;
   showError: boolean = false;
-  planets: Planet[] = [];
   selectedPlanet: Planet;
+  planets: Planet[] = [
+    { name: "Earth", moons: 1, distanceFromSun: 65000 },
+    { name: "Mars", moons: 2, distanceFromSun: 75000 },
+    { name: "Venus", moons: 4, distanceFromSun: 95000 },
+    { name: "Neptune", moons: 7, distanceFromSun: 125000 }];
 
-  constructor() {}
+
+  constructor() { }
 
 
   addPlanet(planet: Planet) {

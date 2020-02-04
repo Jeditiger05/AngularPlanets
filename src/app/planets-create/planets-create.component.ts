@@ -9,7 +9,7 @@ import { PlanetStoreService } from '../planet-store.service';
 export class PlanetsCreateComponent implements OnInit {
 
   //planet: Planet;
-  name: string;
+  name: string = "";
   moons: number;
   distanceFromSun: number;
   constructor(private store: PlanetStoreService) { }
@@ -20,8 +20,9 @@ export class PlanetsCreateComponent implements OnInit {
   createPlanet() {
     //let planet1 = new Planet(this.name, this.moons, this.distanceFromSun);//Create Planet Object Using constructor
     //let planet: Planet = { name: this.name, moons: this.moons, distanceFromSun: this.distanceFromSun }//Create Planet Object without Using Constructor
-    if (this.name.length > 0) {
-      //this.store.addPlanet(planet2);
+    //this.store.addPlanet(planet2);
+
+    if (this.name != "") {
       this.store.addPlanet({ name: this.name, moons: this.moons, distanceFromSun: this.distanceFromSun });
       this.store.log();
       this.name = "";
