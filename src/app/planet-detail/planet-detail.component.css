@@ -27,3 +27,13 @@ h1, h2{
     text-shadow: 3px 3px 0 rgb(194, 61, 0);
 
 }
+
+button{
+    font-family: 'Bauhaus 93';
+    background-color: rgb(231, 185, 117);
+    color: black;
+    border: 5px solid rgb(248, 120, 0);
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+}

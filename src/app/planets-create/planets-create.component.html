@@ -1,28 +1,27 @@
+<div class="container" *ngIf="this.store.showCreate">
+    <h1>Create New Planet</h1>
 
-<div id="container" *ngIf="this.store.showCreate">
-<h1>Create New Planet</h1>
+    <div>
+        <label>Planet Name:</label>
+        <input [(ngModel)]="name">
+    </div>
 
-<div>
-    <label>Planet Name:</label>
-    <input [(ngModel)] = "name">
-</div>
+    <div>
+        <label>Number of Moons:</label>
+        <input [(ngModel)]="moons">
+    </div>
 
-<div>
-<label>Number of Moons:</label>
-<input [(ngModel)] = "moons">
-</div>
+    <div>
+        <label>Distance From Sun:</label>
+        <input [(ngModel)]="distanceFromSun">
+    </div>
 
-<div>
-<label>Distance From Sun:</label>
-<input [(ngModel)] = "distanceFromSun">
-</div>
-
-<br>
+    <br>
 
 </div>
 
 <div class="container">
     <br>
-    <button (click)="createPlanet()" >Create Planet</button>
-    
+    <button (click)="createPlanet()">Create Planet</button>
+
 </div>

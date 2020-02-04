@@ -1,8 +1,8 @@
 <div class="container" *ngIf="this.store.showList">
 
     <h1>List of Planets</h1>
-    <li class="myList" *ngFor="let planet of dispPlanets"
-        [class.selected]="planet == selectedPlanet"
+    <li *ngFor="let planet of dispPlanets" 
+        [class.selected]="planet == selectedPlanet" 
         (click)="onSelect(planet)">
         <span>{{planet.name}}</span>
     </li>
@@ -17,4 +17,3 @@
     <button (click)="displayPlanets()">Display Planets</button>
 
 </div>
-

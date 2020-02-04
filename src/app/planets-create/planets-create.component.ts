@@ -25,6 +25,9 @@ export class PlanetsCreateComponent implements OnInit {
       this.store.addPlanet({ name: this.name, moons: this.moons, distanceFromSun: this.distanceFromSun });
       this.store.log();
       this.name = "";
+      this.moons = null;
+      this.distanceFromSun = null;
+      this.store.showDetails = false
       this.store.showCreate = true;
       this.store.showList = false;
       this.store.showError = false;
@@ -32,6 +35,10 @@ export class PlanetsCreateComponent implements OnInit {
     else {
       this.store.log();
       this.name = "";
+      this.moons = null;
+      this.distanceFromSun = null;
+      this.store.selectedPlanet = null;
+      this.store.showDetails = false;
       this.store.showCreate = true;
       this.store.showList = false;
       this.store.showError = false;

@@ -20,9 +20,10 @@ export class PlanetsListComponent implements OnInit {
 
   displayPlanets() {
 
-    this.dispPlanets = this.store.planetsList();
+    this.dispPlanets = this.store.getPlanets();
     console.log("Display");
     if (this.dispPlanets.length > 0) {
+      this.store.showDetails = true;
       this.store.showList = true;
       this.store.showError = false;
       this.store.showCreate = false;

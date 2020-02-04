@@ -1,19 +1,21 @@
-<div class="selectStyle" *ngIf="this.store.selectedPlanet">
+<div class="selectStyle" *ngIf="this.store.selectedPlanet && this.store.showDetails">
 
     <h2>Planet Details</h2>
     <div class="block">
         <div>
             <label>Name:</label>
-            <input class="inputStyle" [(ngModel)]="this.store.selectedPlanet.name" placeholder="planet name" />
+            <input class="inputStyle" [(ngModel)]="this.store.selectedPlanet.name"/>
         </div>
         <div>
             <label>Moons:</label>
-            <input class="inputStyle" [(ngModel)]="this.store.selectedPlanet.moons" placeholder="amount of moons" />
+            <input class="inputStyle" [(ngModel)]="this.store.selectedPlanet.moons"/>
         </div>
         <div>
             <label>Distance From Sun:</label>
-            <input class="inputStyle" [(ngModel)]="this.store.selectedPlanet.distanceFromSun" placeholder="distance from sun" />
+            <input class="inputStyle" [(ngModel)]="this.store.selectedPlanet.distanceFromSun"/>
         </div>
     </div>
+
+    <button (click)="removePlanet()">Remove Planet</button>
 
 </div>

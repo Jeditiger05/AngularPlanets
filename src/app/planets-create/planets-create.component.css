@@ -20,7 +20,7 @@ input{
     font-weight: bolder;
 }
 
-#container{
+.container{
     display: block;
     text-align: center;
 }

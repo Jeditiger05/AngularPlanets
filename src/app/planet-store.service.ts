@@ -6,10 +6,11 @@ import { Planet } from './planet';
 })
 export class PlanetStoreService {
 
+  showDetails: boolean = false;
   showList: boolean = false;
   showCreate: boolean = true;
   showError: boolean = false;
-  planets: Planet[] = []
+  planets: Planet[] = [];
   selectedPlanet: Planet;
 
   constructor() {}
@@ -27,7 +28,7 @@ export class PlanetStoreService {
     console.log(this.planets);
   }
 
-  planetsList() {
+  getPlanets() {
     return this.planets;
   }
 }
