@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PlanetStoreService } from '../planet-store.service';
+import { Planet } from '../planet';
 
 @Component({
   selector: 'app-planets-create',
@@ -18,9 +19,9 @@ export class PlanetsCreateComponent implements OnInit {
   }
 
   createPlanet() {
-    //let planet1 = new Planet(this.name, this.moons, this.distanceFromSun);//Create Planet Object Using constructor
-    //let planet: Planet = { name: this.name, moons: this.moons, distanceFromSun: this.distanceFromSun }//Create Planet Object without Using Constructor
-    //this.store.addPlanet(planet2);
+    //this.planet = new Planet(this.name, this.moons, this.distanceFromSun);//Create Planet Object Using constructor
+    //this.planet = { name: this.name, moons: this.moons, distanceFromSun: this.distanceFromSun }//Create Planet Object without Using Constructor
+    //this.store.addPlanet(planet);
 
     if (this.name != "") {
       this.store.addPlanet({ name: this.name, moons: this.moons, distanceFromSun: this.distanceFromSun });
